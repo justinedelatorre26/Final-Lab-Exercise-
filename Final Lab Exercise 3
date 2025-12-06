@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Array declarations
+    int list1[10] = {0};
+    int list2[10] = {8, 5, 12};
+    int list3[3] = {5, 6, 3};
+    int list4[25] = {4, 7};
+
+    // Function to print array elements
+    auto printArray = [](int arr[], int size) {
+        for (int i = 0; i < size; i++) {
+            cout << arr[i] << " ";
+        }
+        cout << endl;
+    };
+
+    cout << "list1: ";
+    printArray(list1, 10);
+
+    cout << "list2: ";
+    printArray(list2, 10);
+
+    cout << "list3: ";
+    printArray(list3, 3);
+
+    cout << "list4: ";
+    printArray(list4, 25);
+
+    return 0;
+}
