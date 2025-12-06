@@ -2,18 +2,15 @@
 using namespace std;
 
 int main() {
-    // Declare and initialize the array
     double sales[] = {12.25, 32.50, 16.90, 23.00, 45.68};
     int size = 5;
 
-    // Display all elements
     cout << "Sales values:\n";
     for (int i = 0; i < size; i++) {
         cout << sales[i] << " ";
     }
     cout << endl;
 
-    // Calculate the average
     double sum = 0;
     for (int i = 0; i < size; i++) {
         sum += sales[i];
